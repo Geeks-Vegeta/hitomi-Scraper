@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="mx-auto text-center">
+    <img class="w-50 m-5" src="{{url_for('static', filename='./images/8muses.png')}}" alt="">
+</div>
+<div class="alert alert-primary w-75 mx-auto" role="alert">
+    <p>step 1: Go to the website</p>
+    <p>step 2:Click on the comic which you like</p>
+    <p>step 3:Copy the url of that comic that you have open</p>
+    <p>step 4:Come back to Comix Scrapper website</p>
+    <p>step 5:Paste that url and click on that download button</p>
+    <p>step 6:Do not refresh website after sending download request</p>
+    <p>step 7:Please keep patiences untill your pdf gets ready</p>
+    
+  </div>
+<div class="text-center">
+    <a href="https://8muses.xxx/" target="_blank">
+        <button type="button" class="btn btn-primary">visit website</button>  
+    </a>
+</div> 
+    <div class="inputs mb-3 p-5 text-center">
+        <form action="/eight_download" method="POST">
+            <input class="w-75 p-2 text-center" name="search" placeholder="Enter url" type="url" validate>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary">Download</button>  
+        </form>  
+    </div>
+{%endblock%}

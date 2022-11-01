@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Twinkle+Star&display=swap');
+html {
+    width: 100%;
+    height: 100%;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+  
+}
+
+
+.dark-varient{
+    /* border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px; */
+    background-color: #2d3436;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+}
+
+
+
+.dark-theme{
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #7f8c8d 74%);
+}
+
+
+.scroller{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.scroller::-webkit-scrollbar{
+    width: 0px;
+}
+
+.scroller .card{
+    height: 20rem;
+    min-width: 16rem;
+    margin:1rem 1rem ;
+    line-height: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.card:hover{
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s;
+    
+}
+
+
+
+
+.top_heading{
+    margin: 1rem;
+    background: none;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Twinkle Star', cursive;
+}
+
+.image-contain{
+    background: none;
+}
+
+.no-link{
+    text-decoration: none;
+}
+
+
+
+.comix-main-image{
+    background-image: url("../images/favicon.ico");
+    background-position: center;
+    background-color: none;
+    width: 5rem;
+    height: 5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.comix-main-image::after{
+    content: "ComixScrapper";
+    margin: 1rem;
+    background: none;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Twinkle Star', cursive;
+}
+
+.dick-gif{
+    background-image: url("../images/dick.gif");
+    background-position: center;
+    background-color: none;
+    width: 20rem;
+    height: 20rem;
+    background-repeat: no-repeat;
+
+}
+
+.box-info{
+    background-color: #3c353f9f;
+}
+
+.welcome-title, .text-green{
+    background: none;
+}
+
+.text-green{
+    color: rgb(45, 190, 135);
+}
+

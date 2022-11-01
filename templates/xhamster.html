@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+{% block content %}
+<div class="mx-auto text-center">
+    <img class="w-50 m-5" src="{{url_for('static', filename='./images/xhamster.png')}}" alt="">
+</div>
+<div class="alert alert-primary w-75 mx-auto" role="alert">
+    <p>step 1: Go to the website</p>
+    <p>step 2:Click on the images on search bar</p>
+    <p>step 3:Search your favourites star</p>
+    <p>step 4:Select the images collection</p>
+    <p>step 5:Copy the url of images that</p>
+    <p>step 6:Paste that url and click on that download button</p>
+    <p>step 7:Please keep patiences untill your pdf gets ready</p>
+    
+  </div>
+  <div class="text-center">
+    <a href="https://xhamster16.desi/photos/search" target="_blank">
+      <button type="button" class="btn btn-primary">visit website</button>  
+    </a>
+</div> 
+    <div class="inputs mb-3 p-5 text-center">
+        <form action="/xhamster_download" method="POST">
+            <input class="w-75 p-2 text-center" name="search" placeholder="Enter url" type="url" validate>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary">Download</button>  
+        </form>  
+    </div>
+{%endblock%}
